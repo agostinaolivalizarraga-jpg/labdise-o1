@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+}
+
+/* tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans&display=swap');
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* navegador */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      height: 40px;
+      background-color: rgba(34, 34, 34)
+    }
+
+    .logo img {
+      height: 63px;
+      width: 63px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      padding: 20px;
+      font-family: "Poppins", sans-serif;
+      font-size: 13px;
+    }
+
+/* carrusel */
+.carrusel img{
+    height: 400px;
+    width: 100%;
+    display: block;
+}
+
+/* información sobre local */
+.infor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background-color: rgba(227, 223, 211)
+}
+
+.img-infor img{
+    height: 200px;
+    width: 200px;
+    padding: 20px 70px;
+    border-radius: 50%;
+}
+
+.text-infor{
+    display: flex;
+    text-align: center;
+    padding-right: 50px;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(34, 34, 34);
+}
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: space-between; 
+  padding: 20px;
+  background-color: rgba(111, 78, 55)
+}
+
+.caja {
+  display: flex;
+  flex-direction: column; 
+}
+
+.sub-footer{
+    font-family: "Montserrat", sans-serif;
+}
+.caja p{
+    text-align: left;
+    margin: 3px 0;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+
+.ig a{
+    text-decoration: none;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
