@@ -65,6 +65,7 @@ body{
 /* información sobre local */
 .infor{
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -85,14 +86,20 @@ body{
     padding-right: 50px;
     font-family: "Open Sans", sans-serif;
     color: rgba(34, 34, 34);
+    font-size: 20px;
 }
 
 /* footer */
 .footer {
   display: flex;
-  justify-content: space-between; 
+  flex-direction: column;
   padding: 20px;
   background-color: rgba(111, 78, 55)
+}
+
+.contenedor{
+  display: flex;
+  justify-content: space-between;
 }
 
 .caja {
@@ -105,9 +112,19 @@ body{
 }
 .caja p{
     text-align: left;
-    margin: 3px 0;
+    margin: 4px 0;
     color: white;
     font-family: "Open Sans", sans-serif;
+}
+
+.caja p img {
+  height: 14px;
+  width: 14px;
+  margin-right: 4px;
+}
+
+.ig{
+  margin-top: 15px;
 }
 
 .ig a{
@@ -115,3 +132,69 @@ body{
     color: white;
     font-family: "Open Sans", sans-serif;
 }
+
+.ig img{
+  height: 14px;
+  width: 14px;
+  margin-right: 4px;
+}
+
+/* tablet */
+@media screen and (max-width: 800px) {
+
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+  }
+
+  .contenedor .caja {
+    width: 28%;
+    margin: 0 15px 20px 15px;
+  }
+
+  .text-infor {
+    font-size: 16px;
+    padding-right: 30px;
+  }
+}
+
+
+/* mobile */
+@media (max-width: 600px) {
+
+  .contenedor {
+    flex-direction: column;
+  }
+  
+  .contenedor .caja {
+    width: 100%;
+  }
+
+  .navbar {
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  .nav-links a {
+    padding: 8px;
+    font-size: 11px;
+  }
+
+  .carrusel img {
+    height: 300px;
+  }
+
+  .infor {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    align-items: center; 
+  }
+
+  .text-infor {
+    padding: 0 40px 20px 40px;
+    font-size: 16px;
+    text-align: center; 
+  }
+  }
