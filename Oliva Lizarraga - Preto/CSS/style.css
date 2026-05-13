@@ -28,32 +28,32 @@ body{
 }
 
 /* navegador */
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      height: 40px;
-      background-color: rgba(34, 34, 34)
-    }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 40px;
+    background-color: rgba(34, 34, 34)
+}
 
-    .logo img {
-      height: 63px;
-      width: 63px;
-    }
+.logo img {
+    height: 63px;
+    width: 63px;
+}
 
-    .nav-links {
-      list-style: none;
-      display: flex;
-    }
+.nav-links {
+    list-style: none;
+    display: flex;
+}
 
-    .nav-links a {
-      text-decoration: none;
-      color: white;
-      padding: 20px;
-      font-family: "Poppins", sans-serif;
-      font-size: 13px;
-    }
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+}
 
 /* carrusel */
 .carrusel img{
@@ -90,6 +90,11 @@ body{
 }
 
 /* footer */
+.mapa-footer iframe {
+  height: 350px;
+  border-style: none;
+  width: 100%
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -100,6 +105,7 @@ body{
 .contenedor{
   display: flex;
   justify-content: space-between;
+  padding: 20px;
 }
 
 .caja {
@@ -139,20 +145,18 @@ body{
   margin-right: 4px;
 }
 
-/* tablet */
-@media screen and (max-width: 800px) {
-
+/* Tablet */
+@media (max-width: 1024px) {
+ 
   .contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start; 
+    flex-wrap: nowrap;
   }
-
-  .contenedor .caja {
-    width: 28%;
-    margin: 0 15px 20px 15px;
+ 
+  .caja {
+    width: auto;
+    margin: 0 10px;
   }
-
+ 
   .text-infor {
     font-size: 16px;
     padding-right: 30px;
@@ -160,22 +164,14 @@ body{
 }
 
 
-/* mobile */
-@media (max-width: 600px) {
-
-  .contenedor {
-    flex-direction: column;
-  }
-  
-  .contenedor .caja {
-    width: 100%;
-  }
-
+/* Mobile */
+@media (max-width: 800px) {
+ 
   .navbar {
     height: auto;
     padding: 10px 15px;
   }
-
+ 
   .nav-links a {
     padding: 8px;
     font-size: 11px;
@@ -184,17 +180,264 @@ body{
   .carrusel img {
     height: 300px;
   }
-
+ 
   .infor {
     flex-direction: column;
     height: auto;
     padding: 20px 0;
-    align-items: center; 
+    align-items: center;
   }
-
+ 
   .text-infor {
     padding: 0 40px 20px 40px;
     font-size: 16px;
-    text-align: center; 
+    text-align: center;
   }
+ 
+  .contenedor {
+    flex-wrap: wrap;
   }
+ 
+  .caja {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Menú */
+.imagenes-categoria {
+  display: flex;
+  width: 100%;
+  background-color: rgba(200, 195, 180);
+}
+
+.cuadrado-img img {
+  width: 312px;
+  height: 250px;
+  background-color: rgba(200, 195, 180);
+  border: 1px solid rgba(200, 195, 180);
+}
+
+.categoria {
+  background-color: rgba(227, 223, 211);
+  padding: 20px 40px;
+}
+
+.categoria h2 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: rgba(111, 78, 55)
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.producto {
+  width: 30%;
+  margin-bottom: 10px;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.producto .nombre {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+.producto .precio {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: rgba(111, 78, 55);
+  margin: 0;
+}
+
+/* Sucursales */
+.titulo-sucursales {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  padding: 20px;
+  margin: 0;
+  background-color: rgba(200, 195, 180);
+  color: rgba(111, 78, 55)
+}
+
+.sucursal {
+  display: flex;
+  height: 200px;
+  border-bottom: 1px solid rgba(200, 195, 180);
+}
+
+.sucursal-mapa {
+  width: 50%;
+}
+
+.sucursal-mapa iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.sucursal-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(227, 223, 211);
+}
+
+.sucursal-info img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.sucursal-info p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  margin: 3px 0;
+  color: rgba(34, 34, 34);
+}
+
+.sucursal-info p img {
+  height: 12px;
+  width: 12px;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.sucursal.invertida {
+  flex-direction: row-reverse;
+}
+
+/* Pedido anticipado */
+.titulo-pedido {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  padding: 20px;
+  margin: 0;
+  background-color: rgba(200, 195, 180);
+  color: rgba(111, 78, 55);
+}
+
+.barra-pedido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(227, 223, 211);
+  border-top: 3px solid rgb(182, 175, 158);
+  border-bottom: 3px solid rgb(182, 175, 158);
+}
+
+.barra-izquierda {
+  display: flex;
+  align-items: center;
+}
+
+.logo-barra {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.selector {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  padding: 5px 10px;
+  border: 1px solid rgba(200, 195, 180);
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.btn-registrarse {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.seccion-menu {
+  padding: 15px;
+  background-color: rgba(227, 223, 211);
+}
+
+.titulo-menu {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  margin-bottom: 15px;
+  color: rgba(111, 78, 55);
+}
+
+.categoria-pedido {
+  margin-bottom: 15px;
+}
+
+.nombre-categoria {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: rgba(111, 78, 55);
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.item-btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  padding: 6px 14px;
+  border: 1px solid rgba(34, 34, 34);
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+  margin: 4px;
+}
+
+.item-btn:hover {
+  background-color: rgba(111, 78, 55);
+  color: white;
+  border-color: rgba(111, 78, 55);
+}
+
+.ver-pedido {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(200, 195, 180);
+  border-top: 3px solid rgb(182, 175, 158);
+}
+
+.btn-ver-pedido {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  padding: 10px 30px;
+  border: 1px solid rgba(34, 34, 34);
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn-ver-pedido:hover {
+  background-color: rgba(111, 78, 55);
+  color: white;
+  border-color: rgba(111, 78, 55);
+}
+
